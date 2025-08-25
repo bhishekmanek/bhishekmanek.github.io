@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bhishek Manek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fdfdfd;
+            color: #222;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2em 1em 1em;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            padding: 0.75em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 2em;
+        }
+        section {
+            margin-bottom: 3em;
+        }
+        img.profile {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-top: 1em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .research-topic {
+            margin-bottom: 1.5em;
+        }
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background: #ecf0f1;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Bhishek Manek" class="profile"/>
+        <h1>Bhishek Manek</h1>
+        <p>Research Scientist • Applied Mathematics • Solar Physics</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a Research Scientist at the Laboratory for Atmospheric and Space Physics (LASP),
+                University of Colorado Boulder. My research combines solar physics, magnetoconvection,
+                and artificial intelligence, with an emphasis on video super-resolution and scientific computing.
+                I am passionate about open science, AI-accelerated workflows, and bridging physics-based
+                models with modern machine learning.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+
+            <div class="research-topic">
+                <h3>OpenDopp</h3>
+                <p>
+                    An open-source pipeline for super-resolution and cross-calibration of solar Dopplergrams
+                    from instruments like HMI, MDI, and GONG. Integrates vision transformers and patch-based data handling.
+                </p>
+            </div>
+
+            <div class="research-topic">
+                <h3>Magnetoconvection Modeling</h3>
+                <p>
+                    Simulating and analyzing convective transport in the presence of magnetic fields using high-resolution MHD solvers.
+                </p>
+            </div>
+
+            <div class="research-topic">
+                <h3>ML for Helioseismology</h3>
+                <p>
+                    Applying data-driven and deep learning methods to interpret helioseismic signatures and
+                    understand sub-surface solar dynamics.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        &copy; 2025 Bhishek Manek • Website hosted with GitHub Pages
+    </div>
+
+</body>
+</html>
