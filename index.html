@@ -9,24 +9,41 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #fdfdfd;
+            background: white;
             color: #222;
         }
         header {
-            background: #2c3e50;
-            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
             padding: 2em 1em 1em;
-            text-align: center;
+        }
+        .profile {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 2em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .title-block h1 {
+            margin: 0 0 0.5em;
+        }
+        .title-block p {
+            margin: 0.2em 0;
         }
         nav {
-            background: #34495e;
+            background: white;
             display: flex;
             justify-content: center;
             gap: 2em;
             padding: 0.75em;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
             font-weight: bold;
         }
@@ -41,22 +58,16 @@
         section {
             margin-bottom: 3em;
         }
-        img.profile {
-            width: 160px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-top: 1em;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
         .research-topic {
             margin-bottom: 1.5em;
         }
         .footer {
             text-align: center;
             padding: 1em;
-            background: #ecf0f1;
-            color: #888;
+            background: #f8f8f8;
+            color: #999;
             font-size: 0.9em;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
@@ -64,8 +75,11 @@
 
     <header>
         <img src="bhishek_manek_profile_pic.png" alt="Bhishek Manek" class="profile"/>
-        <h1>Bhishek Manek</h1>
-        <p>Research Scientist • Applied Mathematics • Solar Physics</p>
+        <div class="title-block">
+            <h1>Bhishek Manek</h1>
+            <p>Research Scientist</p>
+            <p>Applied Mathematics • Solar Physics</p>
+        </div>
     </header>
 
     <nav>
